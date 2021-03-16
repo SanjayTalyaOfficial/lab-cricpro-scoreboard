@@ -1,16 +1,121 @@
 /* Type your code here */
 
+body{
+	
+	
+}
+
+nav{
+	display: flex;
+	justify-content: flex-end;
+}
+.main-container{
+	background-image: url("./assets/background-image1.png");
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+}
+.container{
+	
+	width: 900px;
+	border: 2px;
+}
+
+.title{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-shadow: 0 0 3px #FF0000;
+	letter-spacing: 2px;
+}
+
+.sub-title{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-shadow: 0 0 1px ;
+	letter-spacing: 1px;
+	color: black;
+}
+
+.top-bar{
+	background-color: hsla(16, 94%, 50%, 0.912);
+	border: 3px solid hsla(19, 95%, 50%, 0.905);
+	float: right;
+	width: 100%;
+	color:white;
+}
+
+#align-left{
+	float: left;
+}
+#align-right{
+	float: right;
+	padding: 0px 40px 0px 0px;
+}
+hr.solid{
+	border-top: 2px solid orange;
+}
+
+#players {
+	border-collapse: collapse;
+	width: 100%;
+	background-color: white;
+}
+
+#players th{
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+}
+
+#players td, #players th {
+	border-bottom: 1px solid lightgrey;
+	padding: 10px;
+}
+
 
 /* change the font family and spacing as per your project font */
 .footer{
     display:flex;
     flex-direction: row;
     align-content: flex-end;
-	position: relative;
-	top: 750px;
-	margin-left: 80px;
+	margin: 30px 30px 2px 0px;
 	font-size: 18px;
 	font-family: Nunito Sans;
     font-style: normal;
     
 }
+a {
+	text-decoration: none;
+}
+
+/* --------------------------------- */
+.thumbnail img{
+	
+	}
+	
+	.thumbnail:hover{
+	}
+	
+	.thumbnail:hover img{
+	}
+	
+	.thumbnail span{ /*CSS for enlarged image*/
+		position: absolute;
+	
+		padding: 5px;
+		left: -1000px;
+	
+	visibility: hidden;
+	
+	}
+	
+	.thumbnail span img{ /*CSS for enlarged image*/
+	border-width: 0;
+	}
+	
+	.thumbnail:hover span{ /*CSS for enlarged image*/
+	visibility: visible;
+	left: 30px;
+	bottom: auto ;
+	 /*position where enlarged image should offset horizontally */
+	z-index: 50;
+	}
